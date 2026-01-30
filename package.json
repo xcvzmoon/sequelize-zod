@@ -1,0 +1,26 @@
+{
+  "name": "@xcvzmoon/sequelize-zod",
+  "version": "0.0.1",
+  "description": "Generate Zod schemas automatically from your Sequelize models",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sequelize",
+    "zod",
+    "model",
+    "schema"
+  ],
+  "author": {
+    "name": "Mon Albert Gamil",
+    "email": "mrgamilmonalbert@gmail.com",
+    "url": "https://github.com/xcvzmoon/"
+  },
+  "license": "ISC",
+  "packageManager": "pnpm@10.28.2",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
