@@ -14,15 +14,36 @@
     "email": "mrgamilmonalbert@gmail.com",
     "url": "https://github.com/xcvzmoon/"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xcvzmoon/sequelize-zod"
+  },
+  "files": [
+    "dist"
+  ],
   "type": "module",
-  "main": "index.js",
+  "sideEffects": false,
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.mts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "oxlint --type-aware",
     "format": "oxfmt && oxfmt --check",
     "dev": "tsx watch packages/index.ts",
     "build": "tsdown",
-    "changelog:bump": "pnpm dlx changelogen@latest --bump"
+    "changelog:bump": "pnpm dlx changelogen@latest --bump",
+    "prepublishOnly": "pnpm build"
   },
   "devDependencies": {
     "@types/node": "^25.1.0",
@@ -38,6 +59,9 @@
   "peerDependencies": {
     "sequelize": "^6.37.7",
     "zod": "^4.3.6"
+  },
+  "engines": {
+    "node": ">=18"
   },
   "packageManager": "pnpm@10.28.2"
 }
