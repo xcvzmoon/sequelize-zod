@@ -1,0 +1,25 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "experimentalSortImports": {
+    "groups": [
+      ["side-effect"],
+      ["builtin"],
+      ["external", "external-type"],
+      ["internal", "internal-type"],
+      ["parent", "parent-type"],
+      ["sibling", "sibling-type"],
+      ["index", "index-type"],
+    ],
+  },
+  "singleQuote": true,
+  "ignorePatterns": [
+    "node_modules",
+    "dist",
+    "bun.lock",
+    "CHANGELOG.md",
+    ".DS_Store",
+    ".env*",
+    ".vscode",
+    ".cursor",
+  ],
+}
