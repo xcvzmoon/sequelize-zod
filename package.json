@@ -21,7 +21,8 @@
     "lint": "oxlint --type-aware",
     "format": "oxfmt && oxfmt --check",
     "dev": "tsx watch packages/index.ts",
-    "build": "tsdown"
+    "build": "tsdown",
+    "changelog:bump": "pnpm dlx changelogen@latest --bump"
   },
   "devDependencies": {
     "@types/node": "^25.1.0",
