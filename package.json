@@ -20,12 +20,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "oxlint --type-aware",
     "format": "oxfmt && oxfmt --check",
-    "dev": "tsx watch packages/index.ts"
+    "dev": "tsx watch packages/index.ts",
+    "build": "tsdown"
   },
   "devDependencies": {
     "oxfmt": "^0.27.0",
     "oxlint": "^1.42.0",
     "oxlint-tsgolint": "^0.11.3",
+    "tsdown": "^0.20.1",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   },
