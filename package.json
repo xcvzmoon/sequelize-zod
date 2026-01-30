@@ -19,12 +19,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "oxlint --type-aware",
-    "format": "oxfmt && oxfmt --check"
+    "format": "oxfmt && oxfmt --check",
+    "dev": "tsx watch packages/index.ts"
   },
   "devDependencies": {
     "oxfmt": "^0.27.0",
     "oxlint": "^1.42.0",
     "oxlint-tsgolint": "^0.11.3",
+    "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   },
   "packageManager": "pnpm@10.28.2"
