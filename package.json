@@ -5,7 +5,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "oxlint --type-aware"
   },
   "keywords": [
     "sequelize",
@@ -21,6 +22,8 @@
   "license": "ISC",
   "packageManager": "pnpm@10.28.2",
   "devDependencies": {
+    "oxlint": "^1.42.0",
+    "oxlint-tsgolint": "^0.11.3",
     "typescript": "^5.9.3"
   }
 }
